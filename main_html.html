@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WhateverHTML</title>
+
+<link rel="stylesheet" href="stylesheet.css" type="text/css" />
+
+<script type = "text/javascript">
+window.onload = function() {
+document.getElementById("aMessage").innerHTML = "not HW.";
+};
+</script>
+
+</head>
+
+<body>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <p>In doc <a href = "#target">link</a></p>
+  <h3>More heading 3</h3>
+
+  <div id="overviewContainer">
+    <p>This is my overview </p>
+    <p>This is more content</p>
+    <h4>Small header</h4>
+  </div>
+  <div id="secondDiv"> This is another div</div>
+  <div>
+  <span>A span string </span>
+  <span> does not make a new line</span>
+  </div>
+
+  <p id = "aMessage" class="message">Hello world</p>
+  <p> newline <span style = "color:blue"> text</span>. </p>
+
+  <p>This is a really long string.  The purpose of this string is to see where a wrap around text will occur, and how to specify where it will occur.  To try and group certain elements together can be useful.  If, for visual reasons, you&nbsp;need&nbsp;to&nbsp;keep&nbsp;certain&nbsp;text&nbsp;fragments together, you can. </p>
+
+  <pre> This is     Whitespace!
+  and I <br/> like   it.</pre> <!-- pre sees it 'as is' including whitespace. Pre-formated -->
+
+  <hr/> <!-- ******************** SpecialText ********************************************************************************************** -->
+  
+  <div id = "SpecialText"> Now for tests on special character entities. <br />&lt;&nbsp;&gt;
+  </div>
+  <p>X<sup>2</sup> + log<sub>2</sub>(Y) = Z.</p>
+
+  <br/>
+  <acronym title = "starcraft 2" style="color:gold">SC2</acronym>
+  <br/>
+
+  <acronym title = "acronym text">at</acronym>
+  <br/>
+  <abbr title = "abreviation">abbr</abbr>
+  <br/>
+
+  <em>Empasized text </em><q>Quote</q>
+  <p title = hover over>What is the purpose of an acronym or abbr tag, when you can add a title to any text?</p>
+
+
+  <hr/> <!-- ******************** Lists! *************************************************************************************************************** -->
+  
+  <p> Now for lists </p>
+
+  <ul>
+    <li>First parts of a list</li>
+    <li> unorderd list</li>
+    <li> bullet</li>
+  </ul>
+  
+  <ol class="withAlpha">
+    <li>First</li>
+    <li>Second</li>
+    <li>Third
+      <ul class ="withSquare">
+	<li>Sublist</li>
+	<li>bullet</li>
+      </ul>
+    </li>
+  </ol>
+  
+  <br/>
+  <p>Altered list </p>
+  
+    <ol class = "withRoman" start = "10">
+      <li>Start at 10
+	<ul class = "withSquare">
+	  <li>sublist</li>
+	</ul>
+      </li>
+      <li value = "5">And go back to 5</li>
+    </ol>
+
+  <br/>
+  
+  <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>HTTP</dt>
+    <dd>HyperText Transfer Protocol is the network protocol used to request and send documents between computers</dd>
+  </dl>
+  
+  <ol>
+    <li><a href = "./Link1.html">Relative link</a></li>
+	<li><a href ="http://eu.battle.net/en/">Outside Link</a></li>
+	<li><a name="target" title="destination">Target area</a></li>
+  </ol>
+  
+  <hr/> <!--********************** Tables *************************************************************************************-->
+  <br/>
+  <table cellspacing="5px" cellpadding="4px" width="50%" align="center" border="2" summary = "This table is a test result from trying HTML code.">
+    <caption>My first table</caption>
+    <thead>
+      <tr> <!-- table row (header, body and footer) -->
+	    <th>table data</th> <!-- table header data (header)  -->
+	    <th>uses/purpose</th>
+		<th>formatting</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+	    <td colspan="3">Tables can style differently</td> <!-- Table data (body and footer) -->
+	  </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+	    <td>data1.1</td>
+	    <td>display</td>
+	    <td>A &lt;th&gt;</td>
+		<td rowspan = "2">Words</td>
+	  </tr>
+	  <tr>
+	    <td>data2.1</td>
+	    <td>display</td>
+	    <td>for every &lt;td&gt;</td>
+	  </tr>
+    </tbody>
+  </table>
+  <br/>
+  <table width="400px" align="center" frame="border" rules="all"><!--rules = none|groups|rows|cols|all -->
+    <caption>Another table</caption>
+	<thead>
+	  <tr>
+	    <th>Col 1</th>
+		<th>Col 2</th>
+	  </tr>
+	</thead>
+	<tfoot>
+	  <tr>
+	    <td colspan = "2" align="center">Table</td>
+	  </tr>
+	</tfoot>
+	<tbody>
+	  <tr>
+	    <td>some data</td>
+		<td>space taker</td>
+	  </tr>
+	</tbody>
+  </table>
+  
+  <br/>
+  <hr/>
+  <!-- ********************************* Playing with style sheets *************************************************************** -->
+  <p><span class = "bookTitle">The lord of the rings</span> is a good book series.</p>
+  <p id="turnRed">This is a red paragraph.</p>
+  <div>
+    <p>This should be <span>gray</span> yellow</p>
+  </div>
+
+</body>
+</html>
