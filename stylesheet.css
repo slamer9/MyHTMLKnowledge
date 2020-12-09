@@ -1,0 +1,51 @@
+ body
+ {
+		background-color:gray;
+		padding:10px;
+ }
+  
+  h1, h2, span
+  {
+	  background-color:green;
+  }
+  
+  p 
+  {
+	  font-size:larger;
+  }
+  
+  .bookTitle /*.Class selector*/
+  { 
+  	font-style:italic;
+  	border-style: solid;
+  	border-color: pink;
+  	border-width: thick;
+  }
+  
+  #turnRed /*#ID selector*/
+  { 
+	  background-color:red;
+  }
+  
+  div p span  /*Descendant selector, no comma*/
+  { 
+	  background-color:gray;
+  }
+  
+  div  > p  /*Child selector*/
+  {
+  	background-color:yellow;
+  }
+  
+  
+  acronym {color:green}
+  abbr {color:blue}
+  body { background-color: gray}
+
+  withAlpha {list-style-type: upper-alpha}
+  withRoman {list-style-type: upper-roman}
+  withLowerAlpha {list-style-type: lower-alpha}
+  withLowerRoman {list-style-type: lower-roman}
+
+  withSquare {list-style-type:square}
+  withCircle {list-style-type:circle}
